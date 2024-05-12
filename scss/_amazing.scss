@@ -1,0 +1,57 @@
+.amazing {
+	text-align: center;
+	background: url(../img/bg.png);
+	min-height: 499px;
+
+	&__title {
+		font-weight: 700;
+		font-size: 30px;
+		line-height: 120%;
+		letter-spacing: 0.01em;
+		padding-top: 120px;
+		color: #48555b;
+		margin-bottom: 35px;
+	}
+	&__button{
+		margin: 0 auto;
+	}
+}
+.signup {
+	background-color: #171819;
+	&__container {
+		max-width: 685px;
+		margin: 0 auto;
+	}
+
+	&__fb {
+		padding: 30px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 22px;
+		letter-spacing: 0.04em;
+		color: #fff;
+	}
+
+	&__box {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+
+	&__forms {
+	}
+
+	&__name {
+		padding: 12px 15px;
+	}
+
+	&__button {
+	}
+}
+
+
