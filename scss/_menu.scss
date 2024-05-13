@@ -25,7 +25,7 @@
 
 	&__pic {
 		width: 80px;
-		height: 16px;
+		// height: 16px;
 	}
 
 	&__menu {
@@ -51,4 +51,23 @@
 }
 .main-menu__item:first-child{
 	margin-left: 0px;
+}
+@media screen and (max-width:960px){
+	.main-menu {
+		&__fb {
+			padding: 0 10px;
+		}
+	}
+}
+@media screen and (max-width:520px){
+	.main-menu {
+		&__fb {
+			padding: 0 10px;
+		}
+	
+		&__pic {
+			width: 60px;
+			// height: 16px;
+		}
+	}
 }

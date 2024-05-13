@@ -1,6 +1,7 @@
 .amazing {
 	text-align: center;
-	background: url(../img/bg.png);
+	// background: url(../img/bg.png) 0 0/cover no-repeat;
+	background: url(../img/bg.png) center no-repeat;
 	min-height: 499px;
 
 	&__title {
