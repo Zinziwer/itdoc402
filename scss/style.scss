@@ -12,10 +12,9 @@ body{
 	font-size: 13px;
 	font-weight: 400;
 	background-color: #f2f2f2;
-
 }
 .container {
-	width: 940px;
+	max-width: 940px;
 	margin: 0 auto;
 }
 .title{
@@ -28,14 +27,4 @@ body{
 	background-color: #00A4E5;
 	height: 2px;
 	width: 50px;
-}
-@media screen and (max-width:769px){
-	.container {
-		width: 768px;
-	}
-}
-@media screen and (max-width:376px){
-	.container {
-		width: 375px;
-	}
 }

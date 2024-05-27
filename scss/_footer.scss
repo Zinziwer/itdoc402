@@ -1,3 +1,8 @@
+.footer{
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
 .footer-bottom{
 	height: 60px;
 	display: flex;
@@ -12,14 +17,22 @@
 .footer-top {
 	background-color: #141a20;
 	color: white;
-	padding: 42px 0;
+	padding: 42px 15px;
 	&__fb{
+		display: grid;
+		gap: 65px;
+		grid-template-columns: 250px 262px 141px 87px;
+	}
+	&__left-box{
+		display: flex;
+	}
+	&__right-box{
 		display: flex;
 	}
 }
 .descr {
 	max-width: 250px;
-	margin-right: 71px;
+	// margin-right: 71px;
 
 	&__title {
 		text-transform: uppercase;
@@ -46,7 +59,6 @@
 }
 .links {
 	text-transform: uppercase;
-	margin-right: 48px;
 	&__title {
 		font-weight: 400;
 		font-size: 11px;
@@ -65,6 +77,7 @@
 		font-size: 11px;
 		line-height: 227%;
 		letter-spacing: 0.08em;
+		text-wrap: nowrap;
 
 	}
 	&__item{
@@ -81,7 +94,6 @@
 	font-size: 11px;
 	line-height: 145%;
 	letter-spacing: 0.08em;
-	margin-right: 46px;
 
 	&__title {
 		text-transform: uppercase;
@@ -91,17 +103,49 @@
 	&__text {
 		line-height: 145%;
 		margin-bottom: 15px;
+		color: white;
 	}
 	&__text:last-child {
 		margin-bottom: 0px;
 	}
 }
 .masager {
+	max-width: 87px;
 	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+	max-height: 13px;
 	&__item {
 		font-size: 13px;
-		margin-right: 24px;
-		display: block;
 		color: #fff;
+	}
+}
+@media screen and (max-width:990px){
+	.footer-top {
+		padding: 42px 70px;
+		&__fb{
+			gap: 20px 65px;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 2fr;
+		}
+	}
+}
+@media screen and (max-width:640px){
+	.footer-top {
+		padding: 42px 70px;
+		&__fb{
+			gap: 20px 65px;
+			grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: 4fr;
+		}
+	}
+}
+@media screen and (max-width:360px){
+	.footer-top {
+		padding: 42px 30px;
+	}
+	.footer-bottom{
+
+		font-size: 9px;
 	}
 }

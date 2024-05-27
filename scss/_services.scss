@@ -1,5 +1,6 @@
 .services {
 	margin-bottom: 115px;
+	padding: 0 15px;
 
 	&__title-block {
 		display: flex;
@@ -14,7 +15,7 @@
 		margin-bottom: 10px;
 	}
 	&__title-block-text {
-		width: 406px;
+		max-width: 406px;
 		padding-right: 5px;
 		font-weight: 400;
 		font-size: 11px;
@@ -39,21 +40,10 @@
 		background-color: #0376a3;
 		transition-duration: 0.3s;
 	}
-
-	&__fb {
-		
-	}
-
 	&__col {
-		display: flex;
-		align-items: center;
-		margin: 0 -14px;
-	}
-
-	&__item {
-		padding: 0 14px;
-		min-height: 330px;
-
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 27px;
 	}
 	&__subitem {
 		min-height: 330px;
@@ -85,5 +75,60 @@
 		line-height: 177%;
 		letter-spacing: 0.01em;
 		color: #48555b
+	}
+}
+@media screen and (max-width:990px) {
+	.services {
+		margin-bottom: 60px;
+		&__subitem {
+			min-height: 360px;
+		}
+		&__title-block {
+			flex-direction: column;
+			margin-bottom: 60px;
+		}
+		&__title-block-stick{
+			margin: 0 auto;
+			margin-bottom: 30px;
+		}
+		&__sjhsjg{
+			padding: 0 15px;
+		}		
+	}
+}
+@media screen and (max-width:670px){
+	.services {
+		margin-bottom: 10px;
+		&__col {			
+			grid-template-columns: repeat(2, 1fr);
+		}
+		&__subitem {
+			padding: 30px 17px;
+			min-height: 330px;
+		}
+	}
+}
+@media screen and (max-width:580px){
+	.services {
+		&__col {			
+			grid-template-columns: repeat(1, 1fr);
+		}
+		&__subitem {
+			min-height: 230px;
+			padding: 20px 15px;
+		}
+		&__title-block {
+			margin-bottom: 30px;
+		}
+		&__sjhsjg{
+			flex-direction: column;
+		}
+		&__title-block-text{
+			margin-bottom: 30px;
+		}
+		&__title-block-button{
+			margin: 0 auto;
+		}
+
 	}
 }

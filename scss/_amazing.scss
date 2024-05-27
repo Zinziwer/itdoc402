@@ -12,6 +12,7 @@
 		padding-top: 120px;
 		color: #48555b;
 		margin-bottom: 35px;
+		padding: 120px 15px 0;
 	}
 	&__button{
 		margin: 0 auto;
@@ -19,6 +20,9 @@
 }
 .signup {
 	background-color: #171819;
+	max-width: 1440px;
+	margin: 0 auto;
+	margin-top: -1px;
 	&__container {
 		max-width: 685px;
 		margin: 0 auto;
@@ -44,5 +48,30 @@
 		padding: 12px 15px;
 	}
 }
-
+@media screen and (max-width:768px){
+	.signup {
+		&__fb {
+			flex-direction: column;
+		}
+		&__title {
+			margin-bottom: 15px;
+		}
+	}
+}
+@media screen and (max-width:380px){
+	.signup {
+		&__fb {
+			padding: 30px 15px;
+		}
+		&__title {
+			margin-bottom: 15px;
+		}
+		&__box {
+			flex-direction: column;
+		}
+		&__name {
+			margin-bottom: 15px;
+		}
+	}
+}
 
