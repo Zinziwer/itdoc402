@@ -780,6 +780,11 @@ h1, h2, h3, h4, h5, h6 {
 .signup__name {
   padding: 12px 15px;
 }
+.signup__button:hover {
+  background-color: #0376a3;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
 
 @media screen and (max-width: 768px) {
   .signup__fb {

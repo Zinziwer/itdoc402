@@ -47,6 +47,10 @@
 	&__name {
 		padding: 12px 15px;
 	}
+	&__button:hover{
+		background-color: #0376a3;
+		transition-duration: 0.3s;
+	}
 }
 @media screen and (max-width:768px){
 	.signup {
